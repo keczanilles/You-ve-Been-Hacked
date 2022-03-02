@@ -25,7 +25,6 @@ for (let i = 0; i < salaryList.children.length; i++){
 // restore the html element in the variable "employeeList" to have the button with the text
 // "Find all matching inputs" and "btn-primary" bootstrap design.
 console.dir(employeeList);
-console.log(employeeList.lastElementChild.previousElementSibling.children[0]);
 employeeList.lastElementChild.previousElementSibling.children[0].innerHTML = "Find all matching inputs";
 employeeList.lastElementChild.previousElementSibling.children[0].style.background = '';
 employeeList.lastElementChild.previousElementSibling.children[0].style.color = '';
@@ -48,6 +47,10 @@ let originalEmployeeData = [
   "Macy Massey",
   "David Mcdonald",
 ];
+
+for (let i = 0; i < employeeList.firstElementChild.children.length; i++){
+  employeeList.firstElementChild.children[i].innerHTML = originalEmployeeData[i];
+}
 
 
 
