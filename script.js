@@ -1,7 +1,9 @@
 // restore the html button in the variable "numberInput" to have the placeholder
 // "possible number"
 console.dir(numberInput);
-
+console.log(window.document.body.id);
+console.log(numberInput);
+numberInput.placeholder = "possible number";
 // restore the html element in the variable "calculateHighestSalaries" to have the button text
 // "Calculate highest salary"
 console.dir(calculateHighestSalaries);
