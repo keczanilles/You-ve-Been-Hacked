@@ -15,13 +15,17 @@ calculateHighestSalaries.lastElementChild.previousElementSibling.children[0].inn
 // change the salaries which have the value "-999999" to "12823" by accessing the html element
 // in the variable "salaryList"
 console.dir(salaryList);
-
+console.log(salaryList.children[0].children[1]);
+for (let i = 0; i < salaryList.children.length; i++){
+  if (salaryList.children[i].children[1].innerHTML == "-999999" ){
+    salaryList.children[i].children[1].innerHTML = "12823";
+  }
+}
 
 
 // restore the html element in the variable "employeeList" to have the button with the text
 // "Find all matching inputs" and "btn-primary" bootstrap design.
 console.dir(employeeList);
-
 
 
 // restore the html element in the variable "employeeList" to contain employee names from
