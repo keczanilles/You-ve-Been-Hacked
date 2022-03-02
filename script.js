@@ -59,14 +59,36 @@ for (let i = 0; i < employeeList.firstElementChild.children.length; i++){
 // After restoring the button with the text "Sum salaries" restore it's click functionality
 // to execute the function "sumSalaries".
 console.dir(salariesInput);
+
+salariesInput.firstElementChild.innerHTML =   `<div className="p-3">
+  <input type="number" id="number-1" placeholder="salary 1" className="form-control" value="0">
+  </div>
+  <div className="p-3">
+  <input type="number" id="number-2" placeholder="salary 2" className="form-control" value="0"></div>
+  <div className="p-3">
+  <input type="number" id="number-3" placeholder="salary 3" className="form-control" value="0"></div>
+  <div className="p-3">
+  <input type="number" id="number-4" placeholder="salary 4" className="form-control" value="0"></div>
+  <div className="p-3">
+  <input type="number" id="number-5" placeholder="salary 5" className="form-control" value="0"></div>
+  <div className="p-3">
+  <button id="compute-number-sum" className="btn btn-primary" onclick="sumSalaries()">
+    Sum salaries
+   </button>
+  </div>
+            <div class="p-3" id="number-sum"></div>
+        </div>`;
+
+console.log(salariesInput.firstElementChild.children[5].children[0]);
+
 function sumSalaries() {
   let sum = 0;
-
-  for (let i = 1; i <= 5; i++) {
-    let salary = document.ElementById("number-" + i).value;
-
-    sum = sum + parseInt(salary);
+  console.log(sum);
+  for (let i = 0; i < 5; i++) {
+    let salary = parseInt(salariesInput.firstElementChild.children[i].children[0].value);
+    sum = sum + salary;
   }
-
-  document.ElementById("number-sum").innerText = sum;
+  salariesInput.firstElementChild.children[6].innerHTML = sum;
 }
+
+
