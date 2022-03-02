@@ -1,20 +1,28 @@
 // restore the html button in the variable "numberInput" to have the placeholder
 // "possible number"
 console.dir(numberInput);
-console.log(window.document.body.id);
-console.log(numberInput);
 numberInput.placeholder = "possible number";
+
+
+
 // restore the html element in the variable "calculateHighestSalaries" to have the button text
 // "Calculate highest salary"
 console.dir(calculateHighestSalaries);
+calculateHighestSalaries.lastElementChild.previousElementSibling.children[0].innerHTML = "Calculate highest salary";
+
+
 
 // change the salaries which have the value "-999999" to "12823" by accessing the html element
 // in the variable "salaryList"
 console.dir(salaryList);
 
+
+
 // restore the html element in the variable "employeeList" to have the button with the text
 // "Find all matching inputs" and "btn-primary" bootstrap design.
 console.dir(employeeList);
+
+
 
 // restore the html element in the variable "employeeList" to contain employee names from
 // originalEmployeeData.
@@ -31,6 +39,8 @@ let originalEmployeeData = [
   "Macy Massey",
   "David Mcdonald",
 ];
+
+
 
 // restore the html element in the variable "salariesInput" to have the original html code
 // contained in the div with the id "employeeList" from "index.html".
