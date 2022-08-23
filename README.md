@@ -34,19 +34,3 @@ The hackers managed to deactivate the `document.getElementById`, `document.getEl
     - Under the `Calculate Net` button, there are five inputs and a `Sum salaries` button.
     - Clicking the `Sum salaries` button calls the `sumSalaries` function, which displays the sum of the values from the previous inputs.
 
-## General requirements
-
-None
-
-## Hints
-
-- Add lots of HTML code at once by modifying the `innerHtml` property.
-- See all properties of a DOM object in the console by typing `console.dir(variableWhichContainsHtmlObject)`.
-
-## Background materials
-
-- <i class="far fa-exclamation"></i> [JavaScript Tutorial For Beginners videos](https://www.youtube.com/watch?v=qoSksQ4s_hg&list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET)
-- <i class="far fa-book-open"></i> [Article on "How to get started with web development"](https://dev.to/fabcodingzest/how-to-get-started-with-web-development-front-end-part-1-5c6h)
-- SoloLearn's [JS tutorial](https://www.sololearn.com/Play/JavaScript)
-- [javascript.info](https://javascript.info/)
-- If you see yourself more as a cat person, do not miss [JSForCats](http://jsforcats.com)
